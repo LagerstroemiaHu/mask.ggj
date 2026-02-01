@@ -1,8 +1,12 @@
 
-# Masks - v2.8.2
+# Masks - v2.8.3
 
 ## 项目简介
 "Masks" 是一个极简主义的网页游戏系列。游戏仅使用基础几何形状，隐喻个体在资本主义流水线与社会规训下的异化（Alienation）。
+
+## 版本更新日志 (v2.8.3)
+- **Deployment**:
+  - **Cloudflare Fix**: 添加了 `wrangler.json` 配置文件。修复了在 Cloudflare 上部署时因找不到 Worker 入口点或静态资源目录而导致的 `Missing entry-point` 错误。现在部署脚本会正确识别 `./dist` 目录作为静态资源源。
 
 ## 版本更新日志 (v2.8.2)
 - **Level 3 Audio Fix**:
