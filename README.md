@@ -1,8 +1,12 @@
 
-# Masks - v2.8.3
+# Masks - v2.8.4
 
 ## 项目简介
 "Masks" 是一个极简主义的网页游戏系列。游戏仅使用基础几何形状，隐喻个体在资本主义流水线与社会规训下的异化（Alienation）。
+
+## 版本更新日志 (v2.8.4)
+- **Deployment Fix**:
+  - **Wrangler Config**: 移除了 `wrangler.json` 中 `assets` 配置下的 `binding` 字段。修复了 `Cannot use assets with a binding in an assets-only Worker` 错误。对于纯静态资源的部署（Assets-only Worker），不需要绑定变量。
 
 ## 版本更新日志 (v2.8.3)
 - **Deployment**:
