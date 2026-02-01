@@ -1,8 +1,13 @@
 
-# Masks - v2.8.4
+# Masks - v2.8.5
 
 ## 项目简介
 "Masks" 是一个极简主义的网页游戏系列。游戏仅使用基础几何形状，隐喻个体在资本主义流水线与社会规训下的异化（Alienation）。
+
+## 版本更新日志 (v2.8.5)
+- **Deployment Fix**:
+  - **Missing Entry Point**: 修复了部署后页面黑屏的问题。在 `index.html` 中添加了 `<script type="module" src="./index.tsx"></script>`。
+  - **Reason**: Vite 构建工具依赖 HTML 中的脚本标签来寻找并打包 JavaScript 代码。之前由于缺失该标签，导致构建出的网站仅包含 HTML 外壳，未加载 React 应用逻辑。
 
 ## 版本更新日志 (v2.8.4)
 - **Deployment Fix**:
